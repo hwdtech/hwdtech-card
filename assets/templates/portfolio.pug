@@ -1,0 +1,37 @@
+mixin portfolioProject(project, isLarge)
+  .hwd-portfolio-project(
+    data-animated='zoomIn',
+    class=isLarge ? 'hwd-portfolio-project--large' : ''
+  )
+    .hwd-portfolio-project__box
+      .hwd-portfolio-project__box-inner(style='background-image: url(' + require('../images/' + project.image) + ')')
+      .hwd-portfolio-project__content
+        .hwd-portfolio-project__caption
+          h3.hwd-portfolio-project__title= project.title
+          h4.hwd-portfolio-project__category= project.category
+          a.hwd-portfolio-project__button(role='button', data-modal-toggle='#portfolio_' + index)
+            i.hwd-portfolio-project__icon.hwd-icon.hwd-icon-eye
+
+section#portfolio.hwd-portfolio.hwd-section
+  h2.hwd-section__title Portfolio
+  .hwd-portfolio__inner
+    .hwd-portfolio__main.clearfix
+      each project, index in htmlWebpackPlugin.options.portfolio.slice(0, 3)
+        +portfolioProject(project, index % 3 === 0)
+    .hwd-portfolio__additional.clearfix
+      each project, index in htmlWebpackPlugin.options.portfolio.slice(3)
+        +portfolioProject(project, index % 3 === 0)
+
+    .hwd-portfolio-button__wrapper
+      .hwd-portfolio-button.hwd-button
+        i.hwd-icon.hwd-icon-arrow-down
+
+  each project, index in htmlWebpackPlugin.options.portfolio
+    .hwd-modal(id='portfolio_' + index, role='modal')
+      .hwd-modal-dialog
+        img.hwd-modal-dialog__img(src=project.image, alt=project.title)
+        .hwd-modal-dialog__body
+          h2.hwd-modal-dialog__title= project.title
+          span.hwd-modal-dialog__subtitle= project.technologies.join(' | ')
+          p.hwd-modal-dialog__description!= project.description
+          button.hwd-button.hwd-button--small(data-modal-toggle='#portfolio_' + index) Close

@@ -1,0 +1,17 @@
+section#experience.hwd-work-experience-timeline.hwd-section
+  h2.hwd-section__title Work Experience
+  .hwd-work-experience-timeline__inner
+    .hwd-work-experience-timeline__bar
+    each work, index in htmlWebpackPlugin.options.workExperiences.slice(0).reverse()
+      .hwd-work-experience-timeline-block__wrapper(
+        class='hwd-work-experience-timeline-block__wrapper--' + (index % 2 === 0 ? 'left' : 'right')
+      )
+        i.hwd-work-experience-timeline-block__dot
+        .hwd-work-experience-timeline-block.hwd-animated(
+          data-animated=(index % 2 === 0) ? 'fadeInLeft' : 'fadeInRight'
+        )
+          span.hwd-work-experience-timeline-block__date= work.period
+          i.hwd-work-experience-timeline-block__arrow
+          h3.hwd-work-experience-timeline-block__company= work.company
+          h4.hwd-work-experience-timeline-block__position= work.position
+          p.hwd-work-experience-timeline-block__overview= work.overview

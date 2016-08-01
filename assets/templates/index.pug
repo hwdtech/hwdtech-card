@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    title #{htmlWebpackPlugin.options.name} | HWdTech'
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='theme-color', content='#28303c')
+    meta(name='description', content=htmlWebpackPlugin.options.overview)
+    meta(name='keywords', content=htmlWebpackPlugin.options.keywords)
+    link(href='manifest.json', rel='manifest')
+    link(rel='canonical', href='https://abukurov.github.io/hwdtech-card/')
+    link(href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet' )
+    link(href='//file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css', rel='stylesheet')
+  body
+    header.hwd-header
+    include navigation
+    .content
+      .container
+        include about
+        include professional-skills
+        include portfolio
+        include work-experience-timeline
+        include company-services
+        include interests
+        include statistics
+        include footer
+      a.hwd-scroll-top-btn(href="#", data-scroll)
+        i.hwd-scroll-top-btn__icon.hwd-icon.hwd-icon-arrow-up

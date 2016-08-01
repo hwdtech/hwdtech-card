@@ -1,0 +1,205 @@
+@include block('hwd-navigation') {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: .625em .875em .625em;
+  z-index: 1010;
+  background-color: transparent;
+  color: white;
+
+  @include state('stuck') {
+    position: fixed;
+    box-shadow: 0 0 .75em rgba(0, 0, 0, .5);
+    z-index: 10000;
+    background-color: #28303c;
+
+    @include breakpoint($tablet) {
+      color: $color-font-light;
+      background-color: white;
+    }
+
+  }
+
+  @include element('title') {
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 2.5rem;
+    margin: 0 2.875em;
+    text-align: center;
+
+    @include breakpoint($tablet) {
+      display: none;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    text-align: left;
+  }
+
+  @include element('button') {
+    font-size: 1.75em;
+    padding: .125em .25em;
+    color: currentColor;
+    border-color: transparent;
+    float: left;
+
+    &:hover,
+    &:active {
+      box-shadow: none;
+    }
+
+    @include breakpoint($tablet) {
+      display: none;
+    }
+  }
+
+  @include element('backdrop') {
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.75);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    @include breakpoint($tablet) {
+      display: none !important;
+    }
+  }
+
+  @include state('active') {
+    .hwd-navigation__backdrop {
+      display: block;
+    }
+
+    .hwd-navigation-menu {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+@include block('hwd-navigation-menu') {
+  margin: 0 auto;
+  list-style: none;
+  color: $color-font-base;
+  background-color:white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 18.875em;
+  height: 100%;
+  padding: 0;
+  text-align: left;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform .3s cubic-bezier(.25,.8,.25,1);
+
+  @include breakpoint($tablet) {
+    color: $color-font-light;
+    position: relative;
+    text-align: center;
+    width: auto;
+    background-color: transparent;
+    transition: none;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@include block('hwd-navigation-menu-item') {
+  margin: 0 .9375rem;
+  color: currentColor;
+
+  @include breakpoint($tablet) {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    &:after {
+      content: '';
+      width: 0;
+      height: .25em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $color-primary;
+      transition: width .2s ease-out;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  @include modifier('active') {
+    &:after {
+      width: 100%;
+    }
+  }
+  @include element('link') {
+    text-decoration: none;
+    color: currentColor;
+    font-size: .9375em;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+    padding: .75rem 0;
+  }
+}
+
+.menu-active {
+  overflow: hidden;
+
+  @include breakpoint($tablet) {
+    overflow: auto;
+  }
+}
+
+@include block('hwd-navigation-menu-profile') {
+  padding-bottom: (100% * 9 / 16);
+  background-image: url(../images/sidebar_bg.jpg);
+  background-size: cover;
+  height: 0;
+  position: relative;
+  margin-bottom: .625em;
+
+  &:before {
+    content: '';
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);;
+    @include position(absolute, 0 0 0 0);
+  }
+
+  @include breakpoint($tablet) {
+    display: none;
+  }
+
+  @include element('photo') {
+    position: absolute;
+    bottom: 4.625em;
+    left: 1em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-image: url(../images/profile.jpg);
+    background-size: cover;
+  }
+
+
+  @include element('info') {
+    color: white;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+  }
+
+  @include element('name') {
+    display: block;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  @include element('email') {
+    font-size: .875em;
+    line-height: 1;
+  }
+}

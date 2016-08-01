@@ -1,0 +1,49 @@
+@include block('hwd-professional-skill') {
+  margin-bottom: 1.75em;
+
+  @include breakpoint($tablet) {
+    display: inline-block;
+    margin-bottom: 2.5em;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 1em;
+
+    &:nth-last-child(2n + 1) {
+      padding-left: 1em;
+      padding-right: 0;
+    }
+  }
+
+  @include element('header') {
+    margin-bottom: .3125em;
+
+    @extend .clearfix;
+  }
+
+  @include element('value') {
+    float: right;
+  }
+
+  @include element('bar-line') {
+    height: .3125em;
+    position: relative;
+    border-radius: .3125em;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      opacity: 0.2;
+      z-index: 0;
+      background-color: $color-primary;
+      @include position(absolute, 0 0 0 0);
+    }
+  }
+
+  @include element('bar-fill') {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    background-color: $color-primary;
+
+  }
+}

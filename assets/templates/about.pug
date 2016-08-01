@@ -1,0 +1,36 @@
+section#about.hwd-about.animate-up.animated(data-animated='slideInUp')
+  .hwd-about__inner
+    .hwd-about__profile
+      .hwd-about__profile-photo-wrapper
+        img.hwd-about__profile-photo(src=require('../images/profile.jpg'), alt=htmlWebpackPlugin.options.name)
+
+      .hwd-about-profile-info__wrapper
+        .hwd-about-profile-info
+          .hwd-about-preword__wrapper
+            span.hwd-about-preword Hello
+          h1.hwd-about-profile-info__title
+            span.hwd-about-profile-info__prefix I'm&nbsp;
+            != htmlWebpackPlugin.options.name
+          h2.hwd-about-profile-info__position= htmlWebpackPlugin.options.position
+
+        ul.hwd-about-profile-list
+          li.hwd-about-profile-list-item
+            strong.hwd-about-profile-list-item__title Age
+            span.hwd-about-profile-list-item__cont #{htmlWebpackPlugin.options.age} years old
+
+          li.hwd-about-profile-list-item
+            strong.hwd-about-profile-list-item__title E-mail
+            span.hwd-about-profile-list-item__cont= htmlWebpackPlugin.options.email
+
+          li.hwd-about-profile-list-item
+            strong.hwd-about-profile-list-item__title Phone
+            span.hwd-about-profile-list-item__cont= htmlWebpackPlugin.options.phone
+
+          li.hwd-about-profile-list-item
+            strong.hwd-about-profile-list-item__title Work from
+            span.hwd-about-profile-list-item__cont!= htmlWebpackPlugin.options.employmentDate
+
+    include about-social-icons
+  section.hwd-profile-overview
+    a.hwd-button(role='button') Download Resume
+    p.hwd-profile-overview__text= htmlWebpackPlugin.options.overview

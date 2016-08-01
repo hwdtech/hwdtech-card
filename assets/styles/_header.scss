@@ -1,0 +1,16 @@
+@include block('hwd-header') {
+  position: relative;
+  z-index: 1;
+  height: 32.1875em;
+  background-size: cover;
+  background-color: #242832;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/rs-cover.jpg);
+
+  &:before {
+    content: '';
+    background-color: rgba(44, 51, 64, 0.8);
+    @include position(absolute, 0 0 0 0);
+  }
+}

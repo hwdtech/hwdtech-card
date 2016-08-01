@@ -1,0 +1,32 @@
+@include block('hwd-scroll-top-btn') {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background-color: rgba(white, .5);
+  transition: opacity .2s ease-out;
+  border-radius: 50%;
+  border: 3px solid $color-font-light;
+  color: $color-font-light;
+  z-index: 100;
+  font-size: 1.25em;
+  text-decoration: none;
+  padding: 0.25em 0.4em;
+
+  @include state('hidden') {
+    display: none;
+  }
+
+  @include breakpoint($small-desktop) {
+    opacity: .5;
+    bottom: 2em;
+    right: 2em;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @include element('icon') {
+    font-weight: 600;
+  }
+}

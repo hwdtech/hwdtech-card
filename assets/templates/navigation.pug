@@ -1,0 +1,26 @@
+nav#navigation-menu.hwd-navigation
+  .hwd-navigation__inner
+    button.hwd-navigation__button.hwd-button.hwd-button--small
+      i.hwd-icon.hwd-icon-menu
+    h3.hwd-navigation__title= htmlWebpackPlugin.options.name
+  .hwd-navigation__backdrop
+  ul.hwd-navigation-menu
+    li.hwd-navigation-menu-profile
+      .hwd-navigation-menu-profile__photo
+      .hwd-navigation-menu-profile__info
+        strong.hwd-navigation-menu-profile__name= htmlWebpackPlugin.options.name
+        span.hwd-navigation-menu-profile__email= htmlWebpackPlugin.options.email
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#about') About
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#skills') Skills
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#portfolio') Portfolio
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#experience') Experience
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#services') Services
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#statistics') Statistics
+    li.hwd-navigation-menu-item
+      a.hwd-navigation-menu-item__link(data-scroll, href='#interests') Interests

@@ -1,0 +1,9 @@
+section#statistics.hwd-profile-statistics.hwd-section(data-animated='fadeInUp')
+  h2.hwd-section__title My Statistic
+  .hwd-profile-statistics__inner
+    each statistic in htmlWebpackPlugin.options.statistics
+      .hwd-profile-statistic__wrapper
+        .hwd-profile-statistic
+          .hwd-profile-statistic__value(data-value=statistic.value)= statistic.value
+          h3.hwd-profile-statistic__title= statistic.title
+          .hwd-profile-statistic__cont= statistic.context

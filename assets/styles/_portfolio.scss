@@ -1,0 +1,132 @@
+@include block('hwd-portfolio') {
+  @include element('additional') {
+    display: none;
+
+    @include state('appeared') {
+      display: block;
+    }
+  }
+}
+
+@include block('hwd-portfolio-button') {
+  padding: .5em;
+  font-size: 2em;
+  margin: 0 auto;
+
+  @include element('wrapper') {
+    text-align: center;
+  }
+}
+
+@include block('hwd-portfolio-project') {
+  position: relative;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 0 .625em;
+  margin-bottom: 1.25em;
+
+  @include breakpoint($tablet) {
+    width: (100% / 3);
+
+    @include modifier('large') {
+      width: (100% * 2 / 3);
+    }
+  }
+
+  @include element('box') {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-top: 95%;
+    box-shadow: $shadow;
+  }
+
+  @include element('box-inner') {
+    background-size: cover;
+    box-shadow: $shadow;
+    transition: transform .3s ease-out;
+    @include position(absolute, 0 0 0 0);
+  }
+
+  @include element('content') {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    @include linear-gradient(to top, rgba(32, 39, 52, 0.8), transparent);
+    @include position(absolute, 0 0 0 0);
+  }
+
+  @include element('caption') {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5%;
+    position: absolute;
+    transition: transform 0.2s ease-out;
+    transform: translate3d(0, 100%, 0);
+    backface-visibility: hidden;
+  }
+
+  @include element('title') {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 .8125rem;
+  }
+
+  @include element('button') {
+    cursor: pointer;
+    width: 3.125em;
+    height: 3.125em;
+    line-height: 2.75;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid $color-font-light;
+    color: $color-font-light;
+    border-radius: 3px;
+    transition: transform .35s ease-out;
+    transform: translate3d(0, 200%, 0);
+    backface-visibility: hidden;
+
+    &:hover {
+      color: white;
+      border-color: white;
+    }
+  }
+
+  @include element('icon') {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6em;
+  }
+
+
+  @include element('category') {
+    font-size: .8125em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $color-font-light;
+  }
+
+  @include element('image') {
+    width: 100%;
+  }
+
+  &:hover {
+    .hwd-portfolio-project__box-inner {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+
+    .hwd-portfolio-project__caption,
+    .hwd-portfolio-project__button {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .hwd-portfolio-project__content {
+      opacity: 1;
+    }
+  }
+}

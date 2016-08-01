@@ -1,0 +1,73 @@
+@import "variables";
+
+@import "~animate.css/source/_base.css";
+@import "~animate.css/source/fading_entrances/fadeInUp.css";
+@import "~animate.css/source/fading_entrances/fadeInLeft.css";
+@import "~animate.css/source/fading_entrances/fadeInRight.css";
+@import "~animate.css/source/sliding_entrances/slideInUp.css";
+@import "~animate.css/source/zooming_entrances/zoomIn.css";
+
+@import "~bemify/sass/bemify";
+@import "~breakpoint-sass/stylesheets/breakpoint";
+@import "~bourbon/app/assets/stylesheets/bourbon";
+
+@import "common/button";
+@import "common/icons";
+@import "common/section";
+@import "common/modal";
+
+@import "header";
+@import "navigation";
+@import "footer";
+@import "compamy-services";
+@import "portfolio";
+@import "professional-skills";
+@import "about";
+@import "interests";
+@import "profile-social-icons";
+@import "statistics";
+@import "profile-overview";
+@import "work-experience-timeline";
+@import "scroll-top-button";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $color-font-base;
+  font-size: $base-font-size;
+  background-color: $color-background;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgba($color-primary, .5);
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 100;
+  margin-top: -28em;
+}
+
+.container {
+  width: 100%;
+  max-width: 60em;
+  padding: 0 .625em;
+  margin: 0 auto;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+}

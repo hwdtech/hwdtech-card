@@ -1,0 +1,12 @@
+@include block('hwd-profile-overview') {
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: center;
+  margin-top: 2em;
+  padding: 0 5%;
+
+  @include element('text') {
+    margin-top: 1.5625em;
+  }
+}

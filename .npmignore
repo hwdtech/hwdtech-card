@@ -1,0 +1,10 @@
+logs
+
+packages/browser
+packages/api/tests
+packages/api/config/development.yml
+packages/api/config/test.yml
+
+.*
+browser-build-stats.json
+nodemon.json

@@ -1,0 +1,47 @@
+@include block('hwd-profile-social-icons') {
+  padding: .9375em 0;
+  background-color: $color-primary;
+
+  @include element('list') {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@include block('hwd-profile-social-icons-item') {
+  display: inline-block;
+  vertical-align: middle;
+  margin: .3125em;
+
+  @include breakpoint($tablet) {
+    margin: .3125em 1em;
+  }
+
+  @include element('link') {
+    width: 2.1875em;
+    height: 2.1875em;
+    line-height: 2.1875em;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @include element('icon') {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.0625em;
+    margin-top: -2px;
+
+    @include breakpoint($tablet) {
+      font-size: 1.3125em;
+    }
+  }
+}

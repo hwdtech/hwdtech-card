@@ -1,0 +1,8 @@
+section#interests.hwd-profile-interests.hwd-section(data-animated='fadeInUp')
+  h2.hwd-section__title My Interests
+  .hwd-section__box
+    p.hwd-profile-interests__overview= htmlWebpackPlugin.options.interests.overview
+    ul.hwd-profile-interests__list
+      each interest in htmlWebpackPlugin.options.interests.list
+        li.hwd-profile-interest(data-tooltip=interest.tooltip)
+          i.hwd-profile-interest__icon(class='hwd-icon-' + interest.icon)

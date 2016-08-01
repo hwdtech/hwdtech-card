@@ -1,0 +1,54 @@
+.modal-open {
+  overflow: hidden;
+}
+
+@include block('hwd-modal') {
+  visibility: hidden;
+  overflow: auto;
+  z-index: -1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .75);
+
+  @include position(fixed, 0 0 0 0);
+
+  @include modifier('opened') {
+    visibility: visible;
+    z-index: 1000;
+  }
+}
+
+@include block('hwd-modal-dialog') {
+  position: relative;
+  box-shadow: $shadow;
+  background-color: white;
+  z-index: 100;
+  max-width: 37.5em;
+  transform: translate3d(0, -25%, 0);
+  transition: transform .3s ease-out, opacity .2s ease-out;
+
+  @include modifier('opened') {
+    transform: translate3d(0, 0, 0);
+  }
+
+  @include element('title') {
+    margin: 0 0 .75rem;
+  }
+
+  @include element('subtitle') {
+    color: $color-primary;
+    font-weight: 600;
+  }
+
+  @include element('img') {
+    width: 100%;
+  }
+
+  @include element('body') {
+    padding: 1em 1.5em;
+  }
+
+  @include breakpoint($tablet) {
+    margin: 5em auto;
+  }
+}

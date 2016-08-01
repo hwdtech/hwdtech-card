@@ -1,0 +1,142 @@
+@include block('hwd-work-experience-timeline') {
+  overflow: hidden;
+
+  @include element('inner') {
+    position: relative;
+  }
+
+  @include element('bar') {
+    position: absolute;
+    left: 50%;
+    background-color: $color-primary;
+    top: 0;
+    width: .25em;
+    height: 100%;
+    opacity: 0.2;
+    margin-left: -0.125em;
+  }
+}
+
+@include block('hwd-work-experience-timeline-block') {
+  position: relative;
+  border-top: .3125em solid $color-primary;
+  text-align: center;
+  background-color: white;
+  padding: 1.25em 5%;
+  box-shadow: $shadow;
+
+  @include element('wrapper') {
+    position: relative;
+    margin-bottom: 1.5625em;
+    z-index: 10;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include breakpoint($tablet) {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+
+      @include modifier('left') {
+        padding-right: 3em;
+
+        .hwd-work-experience-timeline-block__dot {
+          right: -.3125em;
+        }
+
+        .hwd-work-experience-timeline-block__arrow {
+          background-position: 100% 0;
+          right: -0.75em;
+
+          &:before {
+            margin-right: 2px;
+            border-top: 1.25em solid transparent;
+            border-bottom: 1.25em solid transparent;
+            border-left: .625em solid white;
+          }
+        }
+      }
+
+      @include modifier('right') {
+        padding-left: 3em;
+        margin-top: 3em;
+
+        .hwd-work-experience-timeline-block__dot {
+          left: -.3125em;
+        }
+
+        .hwd-work-experience-timeline-block__arrow {
+          left: -0.75em;
+
+          &:before {
+            margin-left: 2px;
+            border-top: 1.25em solid transparent;
+            border-bottom: 1.25em solid transparent;
+            border-right: .625em solid white;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint($tablet) {
+
+    @include element('dot') {
+      position: absolute;
+      top: 5.15em;
+      width: .625em;
+      height: .625em;
+      border-radius: 50%;
+      background-color: $color-primary;
+    }
+
+    @include element('arrow') {
+      position: absolute;
+      top: 3.75em;
+      width: .75em;
+      height: 2.5625em;
+      background-image: url(../images/arrows-shadows.png);
+
+      &:before {
+        width: 0;
+        height: 0;
+        content: '';
+        display: block;
+      }
+    }
+  }
+
+  @include element('date') {
+    color: $color-primary;
+    font-size: .9385em;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .9375em;
+  }
+
+  @include element('company') {
+    font-size: 1.375em;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 1.25rem;
+  }
+
+  @include element('position') {
+    color: $color-font-light;
+    font-size: .8125em;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.875rem;
+  }
+
+  @include element('overview') {
+    text-align: justify;
+  }
+}

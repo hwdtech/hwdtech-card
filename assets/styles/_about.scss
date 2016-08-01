@@ -1,0 +1,133 @@
+@include block('hwd-about') {
+  @include element('inner') {
+    background-color: white;
+    box-shadow: $shadow;
+  }
+
+  @include element('profile') {
+    padding: 30px 20px 15px 20px;
+
+    @include breakpoint($tablet) {
+      padding: 57px 50px 15px 50px;
+    }
+  }
+
+  @include element('profile-photo-wrapper') {
+    padding: 0 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+
+    @include breakpoint($tablet) {
+      text-align: left;
+      display: inline-block;
+      vertical-align: top;
+      width: 42%;
+    }
+  }
+
+  @include element('profile-photo') {
+    max-width: 100%;
+  }
+}
+
+@include block('hwd-about-preword') {
+  color: white;
+  background-color: $color-primary;
+  font-size: .875em;
+  font-weight: 700;
+  line-height: 1.1;
+  display: inline-block;
+  padding: .4375em .75em;
+  text-transform: uppercase;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 5px;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $color-primary;
+  }
+
+  @include element('wrapper') {
+    margin-bottom: 1.75em;
+  }
+}
+
+@include block('hwd-about-profile-info') {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dedede;
+
+  @include element('wrapper') {
+    padding: 0 1em;
+
+    @include breakpoint($tablet) {
+      display: inline-block;
+      vertical-align: top;
+      width: 58%;
+    }
+  }
+
+  @include element('title') {
+    font-size: 1.75em;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 5px;
+
+    @include breakpoint($tablet) {
+      font-size: 2.25em;
+    }
+  }
+
+  @include element('prefix') {
+    font-weight: 400;
+  }
+
+  @include element('position') {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+}
+
+@include block('hwd-about-profile-list') {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@include block('hwd-about-profile-list-item') {
+  margin-bottom: .75em;
+  @extend .clearfix;
+
+  @include element('title') {
+    width: 100%;
+    display: inline-block;
+    font-size: .75em;
+    line-height: 1.6;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include breakpoint($tablet) {
+      float: left;
+      width: 7.5em;
+    }
+  }
+
+  @include element('cont') {
+    font-size: .9375em;
+    color: $color-font-light;
+
+    @include breakpoint($tablet) {
+      float: left;
+    }
+  }
+}

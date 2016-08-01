@@ -1,0 +1,52 @@
+@include block('hwd-footer') {
+  text-align: center;
+  padding: 1.275em 0;
+
+  @include breakpoint($tablet) {
+    padding: 1.875em 0;
+
+  }
+
+  @include element('social-list') {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+@include block('hwd-footer-social-list-item') {
+  display: inline-block;
+  vertical-align: middle;
+  margin: .3125em;
+
+  @include breakpoint($tablet) {
+    margin: .3125em 1em;
+  }
+
+  @include element('link') {
+    width: 2.1875em;
+    height: 2.1875em;
+    line-height: 2.1875em;
+    display: inline-block;
+    color: #d7d7d7;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+    &:hover {
+      color: #6e6e6e;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @include element('icon') {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.0625em;
+    margin-top: -2px;
+
+    @include breakpoint($tablet) {
+      font-size: 1.3125em;
+    }
+  }
+}

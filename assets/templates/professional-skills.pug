@@ -1,0 +1,14 @@
+section#skills.hwd-professional-skills.hwd-section(data-animated='fadeInUp')
+  h2.hwd-section__title Professional Skills
+  .hwd-section__box
+    each skill in htmlWebpackPlugin.options.skills
+      .hwd-professional-skill
+        .hwd-professional-skill__header
+          span.hwd-professional-skill__title= skill.name
+          span.hwd-professional-skill__value= skill.percent
+        .hwd-professional-skill__bar-line
+          span.hwd-professional-skill__bar-fill(
+            data-width=skill.percent,
+            style='width: ' + skill.percent
+          )
+

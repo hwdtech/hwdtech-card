@@ -1,0 +1,39 @@
+.hwd-profile-social-icons
+  ul.hwd-profile-social-icons__list
+    if htmlWebpackPlugin.options.social.twitter
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(href=htmlWebpackPlugin.options.social.twitter target='_blank')
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-twitter
+
+    if htmlWebpackPlugin.options.social.facebook
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(href=htmlWebpackPlugin.options.social.facebook target='_blank')
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-facebook
+
+    if htmlWebpackPlugin.options.email
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(href='mailto:' + htmlWebpackPlugin.options.email target='_blank')
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-email
+
+    if htmlWebpackPlugin.options.social.googlePlus
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(href=htmlWebpackPlugin.options.social.googlePlus target='_blank')
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-google-plus
+
+    if htmlWebpackPlugin.options.social.skype
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(
+          href='skype:' + htmlWebpackPlugin.options.social.skype + '?call'
+          target='_blank'
+        )
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-skype
+
+    if htmlWebpackPlugin.options.social.linkedIn
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(href=htmlWebpackPlugin.options.social.linkedIn target='_blank')
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-linkedin
+
+    if htmlWebpackPlugin.options.social.github
+      li.hwd-profile-social-icons-item
+        a.hwd-profile-social-icons-item__link(href=htmlWebpackPlugin.options.social.github target='_blank')
+          i.hwd-profile-social-icons-item__icon.hwd-icon.hwd-icon-github

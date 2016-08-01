@@ -1,0 +1,63 @@
+@include block('hwd-profile-interests') {
+  text-align: center;
+
+  @include element('overview') {
+    margin: 0 0 1.5625em;
+    line-height: 1.5;
+  }
+
+  @include element('list') {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@include block('hwd-profile-interest') {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: .75em;
+  margin: .4375em .3125em;
+  border: 1px solid $color-border;
+
+  &:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    font-size: .6875rem;
+    color: white;
+    background-color: #717171;
+    font-weight: 400;
+    line-height: 1;
+    display: inline-block;
+    padding: .3125rem .5rem;
+    top: 100%;
+    margin-top: .6875rem;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    transition-property: transform, opacity, visibility;
+    transition-duration:  0.15s;
+    transition-timing-function: ease-in;
+    transform: translate3d(0, -15px, 0);
+    backface-visibility: hidden;
+    left: 50%;
+    margin-left: -3.5em;
+    width: 7em;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  @include element('icon') {
+    font-size: 1.875em;
+    color: $color-primary;
+    display: inline-block;
+  }
+}

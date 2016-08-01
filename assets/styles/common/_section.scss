@@ -1,0 +1,25 @@
+@include block('hwd-section') {
+  padding-top: 4em;
+
+  @include breakpoint($tablet) {
+    padding-top: 3.75em;
+  }
+
+  @include element('title') {
+    font-size: 2.125em;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 1.5625rem 0;
+  }
+
+  @include element('box') {
+    background-color: white;
+    box-shadow: $shadow;
+    padding: 1.185em 1em;
+
+    @include breakpoint($tablet) {
+      padding: 2.5em 3.125em;
+    }
+  }
+}

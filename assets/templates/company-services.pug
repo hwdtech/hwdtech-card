@@ -1,0 +1,13 @@
+section#services.hwd-company-services.hwd-section(data-animated='fadeInUp')
+  h2.hwd-section__title Our Services
+  .hwd-section__box
+    ul.hwd-company-services-list
+      each service in htmlWebpackPlugin.options.services
+        li.hwd-company-service
+          i.hwd-company-service__icon.hwd-icon(class='hwd-icon-' + service.icon)
+          h3.hwd-company-service__title= service.title
+          h4.hwd-company-service__subtitle= service.subtitle
+          .hwd-company-service__cont
+            hr.hwd-company-service__delimiter
+            p.hwd-company-service__overview= service.description
+

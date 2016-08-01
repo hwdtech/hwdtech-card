@@ -1,0 +1,34 @@
+@include block('hwd-profile-statistic') {
+  text-align: center;
+  margin-bottom: 1.875em;
+  padding-bottom: 1.5625em;
+  border-bottom: .3125em solid $color-border;
+
+  @include element('wrapper') {
+    padding: 0 .9375em ;
+
+    @include breakpoint($tablet) {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+    }
+  }
+
+  @include element('value') {
+    color: $color-primary;
+    font-size: 3.125em;
+    margin-bottom: .625rem;
+  }
+
+  @include element('title') {
+    font-size: .875em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 .3125rem;
+  }
+
+  @include element('cont') {
+    font-size: .75em;
+    color: $color-font-light;
+  }
+}

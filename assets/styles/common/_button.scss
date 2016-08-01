@@ -1,0 +1,28 @@
+@include block('hwd-button') {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1.25rem 3.4375rem;
+  letter-spacing: 0.05em;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #3d4451;
+  border: 1px solid #cbcdcf;
+  background: transparent;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-out, opacity 0.3s ease-out;
+
+  @include modifier('small') {
+    font-size: .75rem;
+    padding: .75rem 1.5rem;
+  }
+
+  &:hover,
+  &:active,
+  &:active {
+    opacity: 0.95;
+    text-decoration: none;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  }
+}
