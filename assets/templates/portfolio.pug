@@ -18,13 +18,14 @@ section#portfolio.hwd-portfolio.hwd-section
     .hwd-portfolio__main.clearfix
       each project, index in htmlWebpackPlugin.options.portfolio.slice(0, 3)
         +portfolioProject(project, index % 3 === 0)
-    .hwd-portfolio__additional.clearfix
-      each project, index in htmlWebpackPlugin.options.portfolio.slice(3)
-        +portfolioProject(project, index % 3 === 0)
+    if htmlWebpackPlugin.options.portfolio.length > 3
+      .hwd-portfolio__additional.clearfix
+        each project, index in htmlWebpackPlugin.options.portfolio.slice(3)
+          +portfolioProject(project, index % 3 === 0)
 
-    .hwd-portfolio-button__wrapper
-      .hwd-portfolio-button.hwd-button
-        i.hwd-icon.hwd-icon-arrow-down
+      .hwd-portfolio-button__wrapper
+        .hwd-portfolio-button.hwd-button
+          i.hwd-icon.hwd-icon-arrow-down
 
   each project, index in htmlWebpackPlugin.options.portfolio
     .hwd-modal(id='portfolio_' + index, role='modal')
