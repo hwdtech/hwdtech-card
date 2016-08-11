@@ -9,11 +9,15 @@ export default class Portfolio {
     this.element = element;
 
     this.showMoreBtn = element.querySelector(Portfolio.SHOW_MORE_BUTTON_SELECTOR);
-    this.showMoreBtn.addEventListener('click', this.onShowMoreClick);
+    if (this.showMoreBtn) {
+      this.showMoreBtn.addEventListener('click', this.onShowMoreClick);
+    }
   }
 
   destroy() {
-    this.showMoreBtn.removeEventListener('click', this.onShowMoreClick);
+    if (this.showMoreBtn) {
+      this.showMoreBtn.removeEventListener('click', this.onShowMoreClick);
+    }
   }
 
   @autobind

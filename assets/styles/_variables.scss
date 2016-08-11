@@ -1,10 +1,9 @@
 $base-font-size: 16px;
-$metro-developer-color-primary: #fbbdd4; // For Igor Cygler
 $developer-color-primary: #f15c31;
 $senior-developer-color-primary: #29beba;
 $junior-develop-color-primary: #febd2d;
 
-$color-primary: #07cb79;
+$color-primary: $senior-developer-color-primary;
 
 $color-background: #efefef;;
 $color-border: #d7dbde;

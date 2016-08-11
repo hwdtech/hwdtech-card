@@ -1,6 +1,7 @@
 {
   "title": "Watch for Equipment Industry",
   "category": "Web Development",
+  "index": 2,
   "image": "photo-606x597.jpg",
   "technologies": [
     "Express", "Node.js", "Mongoose", "MongoDB", "Elasticsearch", "Kafka",  "Service Discovery",

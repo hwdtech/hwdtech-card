@@ -32,5 +32,9 @@ section#about.hwd-about.animate-up.animated(data-animated='slideInUp')
 
     include about-social-icons
   section.hwd-profile-overview
-    a.hwd-button(role='button') Download Resume
+    a.hwd-button(
+      role='button',
+      download,
+      href=htmlWebpackPlugin.options.resumeLink
+    ) Download Resume
     p.hwd-profile-overview__text= htmlWebpackPlugin.options.overview

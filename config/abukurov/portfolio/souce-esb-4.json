@@ -1,7 +1,0 @@
-{
-  "title": "Electronic parts website",
-  "category": "Web Development",
-  "image": "kaboompics-293x285.jpg",
-  "technologies": ["Node.js (Express)", "Backbone", "Lodash", "Bootstrap", "Sass"],
-  "description": "This website provides access to thousands of distributors, manufacturers, and service providers, offering components for equipment. It provides the efficient means of contacting them through listing local phone numbers, toll-free numbers, fax numbers, addresses, e-mail addresses, and web site addresses.<br/></br> Functionality: Authorization, authentication, Full-text search, Ordering, Working with custom parts lists"
-}
