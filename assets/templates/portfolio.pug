@@ -29,7 +29,7 @@ section#portfolio.hwd-portfolio.hwd-section
   each project, index in htmlWebpackPlugin.options.portfolio
     .hwd-modal(id='portfolio_' + index, role='modal')
       .hwd-modal-dialog
-        img.hwd-modal-dialog__img(src=project.image, alt=project.title)
+        img.hwd-modal-dialog__img(src=require('../images/' + project.image), alt=project.title)
         .hwd-modal-dialog__body
           h2.hwd-modal-dialog__title= project.title
           span.hwd-modal-dialog__subtitle= project.technologies.join(' | ')
