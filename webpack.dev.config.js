@@ -46,7 +46,7 @@ module.exports = {
       loader: 'pug'
     }, {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader')
+      loader: ExtractTextPlugin.extract('style-loader', ['css', 'postcss', 'sass'])
     }, {
       test: /\.(jpe?g|png|gif|svg|ico)$/,
       loader: 'file',
@@ -61,14 +61,7 @@ module.exports = {
         limit: 5000,
         mimetype: 'application/font-woff'
       }
-    },
-      {
-        test: /\.ttf$|\.eot$/,
-        loader: 'file',
-        query: {
-          name: 'font/[hash].[ext]'
-        }
-      }]
+    }]
   },
 
   postcss: () => [autoprefixer],
