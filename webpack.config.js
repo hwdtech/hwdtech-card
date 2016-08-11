@@ -17,10 +17,9 @@ const profileConfigs = require('require-all')({
 });
 
 module.exports = {
+  entry: path.join(__dirname, 'assets', 'main.js'),
 
   devtool: 'source-map',
-
-  entry: path.join(__dirname, 'assets', 'main.js'),
 
   output: {
     path: 'dist',
@@ -38,7 +37,7 @@ module.exports = {
       loader: 'pug'
     }, {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader')
+      loader: ExtractTextPlugin.extract('style-loader', ['css?minimize', 'postcss', 'sass'])
     }, {
       test: /\.woff$/,
       loader: 'url',
@@ -52,12 +51,6 @@ module.exports = {
       loader: 'file',
       query: {
         name: 'images/[hash].[ext]'
-      }
-    }, {
-      test: /\.ttf$|\.eot$/,
-      loader: 'file',
-      query: {
-        name: 'font/[hash].[ext]'
       }
     }]
   },
@@ -87,17 +80,6 @@ module.exports = {
       asset: '[path].gz[query]',
       algorithm: 'gzip',
       threshold: 10240
-    }),
-    new OfflinePlugin({
-      caches: {
-        main: ['index.html', 'bundle.*', 'manifest.json']
-      },
-      AppCache: null,
-      publicPath: '/hwdtech-card',
-      updateStrategy: 'all',
-      ServiceWorker: {
-        output: 'sw.js'
-      }
     })
   ]
     .concat(
