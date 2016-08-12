@@ -1,0 +1,10 @@
+﻿{
+  "title": "Hybrid Mobile application",
+  "category": "Web Development",
+  "index": 5,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "Technologies Sencha Touch 2.", "Phonegap (Apache Cordova)", "Sass"
+  ],
+  "description": "Hybrid Mobile app (iOS and Android) for the News Portal. <br/> Functionality: <br/> News listing (including by popularity) <br/> Searching and management of ads with photos <br/> Engine for payment services"
+}

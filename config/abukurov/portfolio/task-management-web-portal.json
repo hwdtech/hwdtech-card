@@ -1,0 +1,10 @@
+﻿{
+  "title": "Task Management web portal",
+  "category": "Web Development",
+  "index": 6,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    ".NET", "C#", "JavaScript", "HTML5", "Ext JS"
+  ],
+  "description": " This tool can be used by different kinds of organizations. It is suitable for commercial enterprises to measure the activity of their employees, assign tasks, etc. It can also be used for performing tasks and tests in educational institutions. A manager can schedule assignments with deadlines and see screenshots, keyboard and mouse activity. <br/> This is a large scale and labor-intensive project with complexity of 15 man-years. <br/> Particular attention was paid to the visual component of the project management process. Our main aim was demonstrating the current state of the project in a handy form. Backend of the system was implemented with ASP.Net MVC5 and SQL Server. We used POCO Entity 5 framework with expression trees to work with the DB. The front-end is implemented with ExtJs 4 framework. <br/> Features: <br/> Single page web app <br/> Task management <br/> Reports <br/> Customizable task presentation: task tree or task board"
+}
