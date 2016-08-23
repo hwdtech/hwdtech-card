@@ -1,0 +1,12 @@
+﻿{
+  "title": "SQL Server Farm Management tool",
+  "category": "Web Development",
+  "index": 2,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "Express", "MSSQL", "WinForms", "SMO (SQL Server Management Objects)", "C#", ".NET"
+  ],
+  "description": "This tool can be used for managing the farm of SQL servers in a large enterprise.",
+  "my role": " Team leader and Senior .Net Developer.",
+  "my contribution": "Interaction with SQL servers via SMO library, script execution, adjustment of code editor."
+}

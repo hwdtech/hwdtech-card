@@ -1,0 +1,11 @@
+﻿{
+  "title": "Time and issue management tool",
+  "category": "Web Development",
+  "index": 7,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    ".NET", "C#", "ASP.NET MVC", "Sencha Touch", "Ext JS", "Entity Framework", "MSSQL"
+  ],
+  "description": "This application is a truly cross platform C# application which works on Windows, Linux and Mac OS, and has absolutely the same interface. To achieve this, we used embedded WebBrowser control and implemented interface with HTML5 and JS. The architecture is based on Actor model. <br/> Features: <br/> Task management <br/> Time tracking <br/> Native language parser for issue creation <br/> Screenshots <br/> Cloud synchronization",
+  "my contribution": " Each part of application, but especially the following features: cross platform basis of the application, time management and synchronization data with the cloud."
+}

@@ -1,0 +1,11 @@
+﻿{
+  "title": "Speech Recognition Web client",
+  "category": "Web Development",
+  "index": 5,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "HTML5", "JavaScript", "WebSockets"
+  ],
+  "description": " This project is a phone interpreting service, for real-time interpretation conferencing. <br/><br/> Functionality: <br/><br/>This web application was implemented as a speech recognition client for the server. It communicates with the server via HTML5 WebSockets. <br/> <br/>Users can send WAV files to the server or record their speech via microphone and receive translations in real-time. <br/><br/> Users can change a sample rate to compress data and as a result, this web client works even with EDGE in real-time.",
+"my contribution": "I developed HTML5 web client for this service."
+}

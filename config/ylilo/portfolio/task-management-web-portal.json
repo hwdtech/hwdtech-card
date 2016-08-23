@@ -1,0 +1,11 @@
+﻿{
+  "title": "Task Management web portal",
+  "category": "Web Development",
+  "index": 6,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    ".NET", "C#", "JavaScript", "HTML5", "Ext JS"
+  ],
+  "description": "Particular attention was paid to the visual component of the project management process. Our main aim was demonstrating the current state of the project in a handy form. Backend of the system was implemented with ASP.Net MVC5 and SQL Server. We used POCO Entity 5 framework with expression trees to work with the DB. The front-end is implemented with ExtJs 4 framework. <br/> Features: <br/> Single page web app <br/> Task management <br/> Reports <br/> Customizable task presentation: task tree or task board",
+  "my contribution": "Especially back-end and sometimes front-end."
+}
