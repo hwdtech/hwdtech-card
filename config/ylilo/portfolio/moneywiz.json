@@ -3,7 +3,7 @@
   "category": "Web Development",
   "index": 1,
   "image": "kaboompics-293x285.jpg",
-  "technologies": ["C#", " WPF", "TPL", "SQLite", "ORMLite", "Extended WPF Toolkit"],
+  "technologies": ["C#", "WPF", "TPL", "SQLite", "ORMLite", "Extended WPF Toolkit"],
   "description": "MoneyWiz is a world famous money management application. 
 MoneyWiz has received awards and recognition which include being named the Best Finance App out of the Top 500 Must Have Apps by The Telegraph. <br/><br/>MoneyWiz tracks income and expenses as well as allowing users to set and track budgets. It has the ability to schedule payments and also create reports based on the information inputted by the user. The app also has its own syncing platform referred to as "SYNCbits" which syncs a user's information to any device in which the app is installed. MoneyWiz supports twenty languages and is said to comply with the financial system in the countries where the official language is one of the supported ones.",
 "my contribution": "I developed Windows version."
