@@ -1,0 +1,11 @@
+﻿{
+  "title": "Node.js RESTful Micro services",
+  "category": "Web Development",
+  "index": 3,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "Express", "Node.js (Restify", "Sequelize", "PostgreSQL", "Service Discovery", "ZooKeeper", "Mocha + Chai + Sinon",
+    "Gherkin + Cucumber Js", "Grunt" 
+  ],
+  "description": "Automation process for an international newspaper agency. <br/> Our team performed automation for international newspaper agency. Full process was divided by modules. Each module was implemented like a REST service, and was registered in ZooKeeper. I solved the issue of communication between services via ZooKeeper. <br/> Modules:<br/> User service <br/> Allows to manage users, login/logout, restore credentials <br/> Conference planner service <br/> Checks the availability of all participants, provides rooms and the possibility to book them <br/> Email service <br/> Sends and stores information about email messages"
+}

@@ -1,0 +1,11 @@
+﻿{
+  "title": "Watch for Equipment Industry",
+  "category": "Web Development",
+  "index": 2,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "Express", "Node.js", "Mongoose", "MongoDB", "Elasticsearch", "Kafka", "Service Discovery",
+    "Zookeeper", "Ember.js", "ES2015", "Babel"
+  ],
+  "description": "Equipment searching website. <br/> Server side:<br/> JSON API with MongoDB and Elasticsearch back-ends. Kafka was used for data transformations and synchronization between MongoDB & Elasticsearch. API discovers required services (for session, emailing, authentication, etc.) via Zookeeper based solution. <br/><br/> Browser side:<br/> Single page application with Ember.js. It handles a lot of users’ interactions leading to complex data computations and visualizations. <br/><br/> Unit, Integration and Acceptance tests were written with Mocha both on the server and client sides."
+}

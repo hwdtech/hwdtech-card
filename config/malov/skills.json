@@ -1,0 +1,19 @@
+[{
+  "name": "JavaScript",
+  "percent": "97%"
+}, {
+  "name": "HTML & CSS",
+  "percent": "92%"
+}, {
+  "name": "Ember.js",
+  "percent": "95%"
+}, {
+  "name": "Node.js",
+  "percent": "87%"
+}, {
+  "name": "React.js",
+  "percent": "91%"
+}, {
+  "name": "C# .NET",
+  "percent": "85%"
+}]
