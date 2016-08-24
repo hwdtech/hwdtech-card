@@ -1,0 +1,12 @@
+﻿{
+  "title": "Mobile auction (API)",
+  "category": "Web Development",
+  "index": 6,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "Node.js", "Lodash", "Knex.js", "Connect.js", "WS", "BlueBird", "PostgreSQL", "Bookshelf",
+  ],
+  "description": "RESTful Web Services are used by many Android and iOS applications, as well as several websites. One of the biggest challenges was synchronization of data for all these applications. <br/><br/> Functionality: <br/><br/> Identification, Authentication, Authorization <br/><br/> Live bidding <br/><br/> Browsing and searching current catalogs, and specifying lots of interest <br/><br/> Standard format for individuals to describe and submit an item for potential consignment right from their phone <br/><br/> Opportunities for customers to register and bid for items available for sale in between or after live events, based on auction timing and bid criteria. ",
+
+  "my contribution": " I worked on the server side on this project and was a part of a remote development team. As an authorization flow I used protocol OAuth 2.0. I created a task scheduler, which is responsible for tasks such as sending email messages and push notifications (GCM and APNS), and which works with the Amazon S3 and ExaVault API. As a part of this project, I was involved in implementing Auction Mobility real time bidding room server."
+}

@@ -1,0 +1,12 @@
+﻿{
+  "title": "Script service",
+  "category": "Web Development",
+  "index": 5,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "Backbone.js", "Lodash", "jQuery", "ES2015", "Vis.js", "Babel", "Grunt", "Spring", "Java",
+  ],
+  "description": "This service provides tips to aid in the work of the sales staff. The original version of the website consisted of an educational part and a series of tests aimed at more efficient sales. Training completed with a final test. Subsequently, the customer abandoned the idea to include the tests, so we do not have them in the current version of the website. <br/><br/> The working part of the project, which became the final version, consists of tips for sales managers, which they can use in the course of a conversation with a potential client in a variety of situations. These instructions significantly increase conversion. <br/><br/> There are 300 cards that can be grouped in a convenient way (for example, “FAQ” or “objections”), or your own group can be created as well. It makes navigation during the conversation much faster and helps attract customers.",
+
+  "my contribution": "Front-end development."
+}

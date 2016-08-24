@@ -1,0 +1,19 @@
+[{
+  "name": "JavaScript",
+  "percent": "95%"
+}, {
+  "name": "Node.js",
+  "percent": "97%"
+}, {
+  "name": "HTML & CSS",
+  "percent": "93%"
+}, {
+  "name": "PHP & MySQL",
+  "percent": "88%"
+}, {
+  "name": "C# .NET",
+  "percent": "80%"
+}, {
+  "name": "MongoDB",
+  "percent": "95%"
+}]
