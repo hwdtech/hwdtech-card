@@ -1,0 +1,11 @@
+﻿{
+  "title": "News Portal",
+  "category": "Web Development",
+  "index": 4,
+  "image": "photo-606x597.jpg",
+  "technologies": [
+    "JavaScript", "jQuery", "Backbone.js", "HTML5", "CSS3", ".NET", "C#",
+    "ASP.NET MVC", "HWdTech.DS"
+  ],
+  "description": "News and advertisement portal for a big city. <br/> Our team created one of the largest news portals for a metropolis. The design of the portal was provided by the most famous design company in Russia. The main difficulty was passing the supervision of this company. There are about 80+K unique users per day and more than 1 billion page requests per day. <br/> Functionality: <br/><ul><li>News listing (including by popularity)</li><li>News listing (including by popularity)</li><li>Commenting</li><li>Checking comments on stop-words and stop phrases to avoid publishing non-legal comments</li><li>Web-based admin control panel for journalists</li></ul>"
+}
