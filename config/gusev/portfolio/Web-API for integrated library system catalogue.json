@@ -7,6 +7,5 @@
     "Python", "Flask"
   ],
   "description": "This API is a middleware between ILS and any other client-side application. Previously, ILS was written using monolithic architecture (data and view were tied) and developers were not able to display the catalogue as they want in newer versions of applications. This project solves the problem of taking requests and providing responses with JSON/XML parameters.",
-  "my contribution": "Back-end development",
-
+  "my contribution": "Back-end development"
 }

@@ -6,6 +6,6 @@
   "technologies": [
     "Python", "Flask", "Angular.js", "Linux administration"
   ],
-"description": "Project: the tool enables students to make computations on the university supercomputer without Linux command line skills. It provides a web-client in order to upload project files, build projects and run them. <br/><br/> This project includes a wide range of tasks: The web-client written in Python (with Flask framework) on the back-end and AngularJS on the front-end; <br/><br/> Python scripts that handle project tasks (building, running, working with file system etc.); <br/><br/> Computational server security configuration: AppArmor for program capabilities, quotatool for hard disk usage limitations, users’ permissions configuration.",
-"my contribution": "full-stack development",
+  "description": "Project: the tool enables students to make computations on the university supercomputer without Linux command line skills. It provides a web-client in order to upload project files, build projects and run them. <br/><br/> This project includes a wide range of tasks: The web-client written in Python (with Flask framework) on the back-end and AngularJS on the front-end; <br/><br/> Python scripts that handle project tasks (building, running, working with file system etc.); <br/><br/> Computational server security configuration: AppArmor for program capabilities, quotatool for hard disk usage limitations, users’ permissions configuration.",
+  "my contribution": "full-stack development"
 }

@@ -9,7 +9,7 @@
     "clean": "rimraf ./dist",
     "precommit": "npm run lint",
     "prepush": "npm run lint",
-    "build": "npm run clean; webpack --progress; cp manifest.json ./dist/manifest.json",
+    "build": "npm run clean && webpack --progress && cp manifest.json ./dist/manifest.json",
     "analyze": "webpack --profile --json > browser-build-stats.json",
     "deploy": "npm run precommit && npm run clean && npm run build && gh-pages -d dist -m 'Update gh-pages'"
   },

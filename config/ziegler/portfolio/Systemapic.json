@@ -4,9 +4,8 @@
   "index": 1,
   "image": "photo-606x597.jpg",
   "technologies": [
-    "Node.js (Express)", "Mongoose", "MongoDB", "Mocha + Chai + Sinon", "Lodash", "HTML5", "CSS3", "Vanilla.js",
+    "Node.js (Express)", "Mongoose", "MongoDB", "Mocha + Chai + Sinon", "Lodash", "HTML5", "CSS3", "Vanilla.js"
   ],
   "description": "Systemapic helps you publish GEO data without having to write any code. With your own PostGIS database and systemapic powerful tile server, you can easily make changes to your maps without having to use any third party software.",
-
   "my contribution": "I performed refactoring of this project; it was written more than 400 unit, integration and system mocha tests. While writing the tests, I have revealed a large number of bugs and defects of the system, which were subsequently eliminated. I also conducted full project documentation, using apidocjs. I solved frontend issues as well as backend ones."
 }

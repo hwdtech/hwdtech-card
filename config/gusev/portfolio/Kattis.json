@@ -5,5 +5,5 @@
   "image": "kaboompics-293x285.jpg",
   "technologies": ["Python", "JavaScript", "jQuery", "HTML5", "CSS3", "PostgreSQL", "Bootstrap"],
   "description": "Kattis allows companies to exhibit their test tasks and challenges. Potential employees, in their turn, can compete and have a greater chance of being hired. Top developers receive a response from the company. Kattis allows to evaluate candidates effectively and objectively. <br/><br> Also, a large part of the project is a platform for programming contests. It is popular among freelancers and companies, as well as among educational institutions. Kattis is often used by top universities to make better assessments on students’ work.",
-"my contribution": "Full-stack web development."
+  "my contribution": "Full-stack web development."
 }
