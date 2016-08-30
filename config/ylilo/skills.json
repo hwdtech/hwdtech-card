@@ -1,19 +1,19 @@
 [{
-  "name": "C# .Net",
+  "name": "C#",
   "percent": "96%"
 }, {
   "name": "Microsoft SQL Server",
   "percent": "90%"
 }, {
-  "name": "JavaScript",
+  "name": "JavaScript/HTML/CSS",
   "percent": "92%"
 }, {
-  "name": "HTML & CSS",
-  "percent": "90%"
+  "name": "LINQ",
+  "percent": "93%"
 }, {
-  "name": "Node js",
+  "name": "WPF",
   "percent": "94%"
 }, {
-  "name": "MySQL",
+  "name": "Asp.Net",
   "percent": "95%"
 }]

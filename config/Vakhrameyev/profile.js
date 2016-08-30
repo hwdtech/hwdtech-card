@@ -15,7 +15,7 @@ module.exports = Object.assign({}, profile, {
   keywords,
   skills,
   age: moment().diff(new Date(profile.birthday), 'year'),
-  employmentDate: moment(new Date(profile.employmentDate)).utc().format('DD MMMM YYYY'),
+  employmentDate: moment(new Date(profile.employmentDate)).format('DD MMMM YYYY'),
   portfolio: _(portfolio).toArray().sortBy('index').value(),
   interests: require('./interests.json'),
   services: require('./services.json'),

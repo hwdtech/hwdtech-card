@@ -1,19 +1,19 @@
 {
   "list": [{
-    "icon": "bicycle",
-    "tooltip": "Bicycling"
+    "icon": "book",
+    "tooltip": "Reading"
   }, {
     "icon": "film",
     "tooltip": "Watch Movies"
   }, {
-    "icon": "shopping-bag",
-    "tooltip": "Shopping"
+    "icon": "map-o",
+    "tooltip": "Walking"
   }, {
-    "icon": "road",
+    "icon": "plane",
     "tooltip": "Travelling"
   }, {
-    "icon": "headphones",
-    "tooltip": "Music"
+    "icon": "wordpress",
+    "tooltip": "Blogging"
   }, {
     "icon": "football",
     "tooltip": "Football"
