@@ -1,31 +1,31 @@
 [{
-  "icon": "paint-brush",
-  "title": "DESIGN",
-  "subtitle": "UI/UX design, Site Architecture",
-  "description": "Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can"
+  "icon": "send",
+  "title": "Development for Startups",
+  "subtitle": "Bring to success",
+  "description": "At HWdTech, we are problem solvers above all and we love new challenges. Thus, we love working with startups. Entrepreneurs have brilliant ideas, and we have the necessary technical expertise to help transform ideas into a service or a product. Our commitment to Agile practices helps to tackle goals in a time sensitive manner delivering market ready solutions to our clients."
 }, {
   "icon": "desktop",
+  "title": "Software Product Development",
+  "subtitle": "Full process",
+  "description": "Want to invent a new world famous project? A groundbreaking website?  Make a highload business system? Create a very useful application? If you can dream it, we can make it. HWdTech has been involved in many custom projects over the years. Tap into our domain and technology expertise to develop a custom product that will wow your audience."
+}, {
+  "icon": "cubes",
+  "title": "Software Prototyping",
+  "subtitle": "Desktop and web",
+  "description": "A software prototype gives you a clear idea of your future full-featured software: its design, performance, compatibility, usability and interaction scenarios. As result, a relatively small investment in a prototype allows you to clarify targets of the project, to adjust the roadmap and significantly decrease various project risks at an early stage."
+},{
+  "icon": "user-plus",
+  "title": "Outsourcing IT",
+  "subtitle": "Only qualified developers",
+  "description": "We offer delegation of our specialists to work with your project in any phase, for any time period. It helps save your time and avoid many expenses associated with hiring new employees. Depending on the project we can match the best profile of the IT specialist to your needs."
+}, {
+  "icon": "chrome",
   "title": "WEB DEVELOPMENT",
-  "subtitle": "UI and UX design",
-  "description": "Vitamin B is more often referred to today as the B vitamins to better relate that it is actually a group of 8 different vitamins, with varying functions and sources."
+  "subtitle": "Simple sites and portals",
+  "description": "We have a true passion for developing websites, and that is what we do best. Our websites are built with every device in mind – from the smallest smartphone to the largest display. An attractive website will benefit your brand and can make a great first impression. We develop sites to ensure you stand out from competitors and show your customers that you’re cutting-edge and modern."
 }, {
-  "icon": "send",
-  "title": "MARKETING",
-  "subtitle": "SEO & MARKETING",
-  "description": "World over people use massage therapy to help promote healthy skin, nourish and strengthen the body, relieve stress,"
-}, {
-  "icon": "paint-brush",
-  "title": "DESIGN",
-  "subtitle": "UI/UX design, Site Architecture",
-  "description": "Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can"
-}, {
-  "icon": "desktop",
-  "title": "WEB DEVELOPMENT",
-  "subtitle": "UI and UX design",
-  "description": "Vitamin B is more often referred to today as the B vitamins to better relate that it is actually a group of 8 different vitamins, with varying functions and sources."
-}, {
-  "icon": "send",
-  "title": "MARKETING",
-  "subtitle": "SEO & MARKETING",
-  "description": "World over people use massage therapy to help promote healthy skin, nourish and strengthen the body, relieve stress,"
+  "icon": "medkit",
+  "title": "Emergency Care",
+  "subtitle": "Until it's not too late",
+  "description": "Development of the sofstware is a very difficult process. And not every IT company can finish project and bring to success. It is very important to catch the moment, when project can still be saved. Ask us to save your project. HWdTech have been involved in many such projects."
 }]
